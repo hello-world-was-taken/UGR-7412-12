@@ -4,57 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/portfolio.css">
     <title>About</title>
 </head>
 <body>
 
     <nav class="navigation">
-        <span class="navigation__logo">Logo Image</span>
+        <span class="navigation__logo navigation__elements">HAILEMARIAM</span>
 
-        <button class="navigation__hamburger" title="hamburger" type="button">hamburger</button>
+        <button class="navigation__hamburger navigation__elements" title="hamburger" type="button"><img class="navigation__hamburger-img" src="/images/hamburger.png" alt=""></button>
 
         <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="/index.html">Home</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/about.html">About</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/skills.html">Skills</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/portfolio.html">Portfolio</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/services.html">services</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/testimonial.html">Testimonial</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/contact.html">Contact</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/index.html">Home</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/about.html">About</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/skills.html">Skills</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/portfolio.html">Portfolio</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/services.html">services</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/testimonial.html">Testimonial</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="header">
-        <h1 class="header__title">Portfolio</h1>
-        
-        <p class="header__portfolio-into">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eaque hic repudiandae ut, neque minus laudantium a quasi facere molestias.</p>
-
-    </header>
-
     <main class="portfolio-main">
+
+        <header class="header">
+            <h1 class="header__title">Portfolio</h1>
+            
+            <p class="header__portfolio-into">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eaque hic repudiandae ut, neque minus laudantium a quasi facere molestias.</p>
+    
+        </header>
         
         <div class="main__flex">
             <button class="portfolio__move-left">Move Left</button>
 
-            <section class="card">
-                <img class="card__img" src="" alt="">
-                <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            </section>
-
-            <section class="card">
-                <img class="card__img" src="" alt="">
-                <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            </section>
-
-            <section class="card">
-                <img class="card__img" src="" alt="">
-                <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            </section>
-
-            <section class="card">
-                <img class="card__img" src="" alt="">
-                <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-            </section>
+            <div class="section-wrapper">
+                <section class="card">
+                    <img class="card__img" src="/images/android.png" alt="">
+                    <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </section>
+    
+                <section class="card">
+                    <img class="card__img" src="/images/apple.png" alt="">
+                    <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </section>
+    
+                <section class="card">
+                    <img class="card__img" src="/images/android.png" alt="">
+                    <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </section>
+    
+                <section class="card">
+                    <img class="card__img" src="/images/apple.png" alt="">
+                    <p class="card__description">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </section>
+            </div>
 
             <button class="portfolio__move-right">Move Right</button>
         </div>
@@ -63,9 +66,9 @@
 
     <footer class="footer">
 
-        <span class="footer__left">Something</span>
-        <span class="footer__center">Something</span>
-        <span class="footer__right">Something</span>
+        <!-- <span class="footer__left footer__elements"></span> -->
+        <span class="footer__center footer__elements">Terms and services</span>
+        <span class="footer__right footer__elements">&copy;2021</span>
 
     </footer>
 </body>

@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
     <title>Home</title>
 </head>
 <body>
 
     <nav class="navigation">
-        <span class="navigation__logo">Logo Image</span>
+        <span class="navigation__logo navigation__elements">HAILEMARIAM</span>
 
-        <button class="navigation__hamburger" title="hamburger" type="button">hamburger</button>
+        <button class="navigation__hamburger navigation__elements" title="hamburger" type="button"><img class="navigation__hamburger-img" src="/images/hamburger.png" alt=""></button>
 
         <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="/index.html">Home</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/about.html">About</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/skills.html">Skills</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/portfolio.html">Portfolio</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/services.html">services</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/testimonial.html">Testimonial</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="/html/contact.html">Contact</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/index.html">Home</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/about.html">About</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/skills.html">Skills</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/portfolio.html">Portfolio</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/services.html">services</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/testimonial.html">Testimonial</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="header">
-        <h1 class="header__title">Hello!</h1>
-    </header>
-
     <main class="home-main">
         
+        <!-- <header class="header">
+            <h1 class="header__title">Hello!</h1>
+        </header> -->
+
         <div class="main__flex">
             <p class="home-main__introduction">
-                Hi, I am <span class="home-main__name">Hailemariam</span>
+                Hi,I am <br/><span class="home-main__name">Hailemariam</span>
             </p>
     
             <div class="home-main__personal-photo-social">
-                <img class="home-main__img" src="" alt="Hailemariam's personal photo">
-                <span class="home-main__social"><a class="home-main__social-link" href="">face</a></span>
-                <span class="home-main__social"><a class="home-main__social-link" href="">Insta</a></span>
-                <span class="home-main__social"><a class="home-main__social-link" href="">linkedIn</a></span>
+                <img class="home-main__img" src="/images/personal_avatar.png" alt="Hailemariam's personal photo">
+                <div class="wrapper__div">
+                    <a class="home-main__social-link" href=""><img src="/images/facebook.png" alt="facebook logo" class="home-main__social-img"></a>
+                    <a class="home-main__social-link" href=""><img src="/images/twitter.png" alt="twitter logo" class="home-main__social-img"></a>
+                    <a class="home-main__social-link" href=""><img src="/images/linkedin.png" alt="linkedin logo" class="home-main__social-img"></a>
+                </div>
             </div>
         </div>
 
@@ -47,9 +50,9 @@
 
     <footer class="footer">
 
-        <span class="footer__left">Something</span>
-        <span class="footer__center">Something</span>
-        <span class="footer__right">Something</span>
+        <!-- <span class="footer__left footer__elements"></span> -->
+        <span class="footer__center footer__elements">Terms and services</span>
+        <span class="footer__right footer__elements">&copy;2021</span>
 
     </footer>
 </body>
