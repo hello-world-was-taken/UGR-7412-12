@@ -12,9 +12,10 @@
     <nav class="navigation">
         <span class="navigation__logo navigation__elements">HAILEMARIAM</span>
 
-        <button class="navigation__hamburger navigation__elements" title="hamburger" type="button"><img class="navigation__hamburger-img" src="/images/hamburger.png" alt=""></button>
+        <button onclick="show_nav()" class="navigation__hamburger navigation__elements" title="hamburger" type="button"><img class="navigation__hamburger-img" src="/images/hamburger.png" alt=""></button>
 
-        <ul class="navigation__list">
+
+        <ul class="navigation__list" id="nav">
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="/index.html">Home</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/about.html">About</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="/html/skills.html">Skills</a></li>
@@ -35,7 +36,7 @@
         </header>
         
         <div class="main__flex">
-            <button class="portfolio__move-left">Move Left</button>
+            <button class="portfolio__move-left">&laquo;</button>
 
             <div class="section-wrapper">
                 <section class="card">
@@ -59,7 +60,7 @@
                 </section>
             </div>
 
-            <button class="portfolio__move-right">Move Right</button>
+            <button class="portfolio__move-right">&raquo;</button>
         </div>
 
     </main>
@@ -71,5 +72,7 @@
         <span class="footer__right footer__elements">&copy;2021</span>
 
     </footer>
+
+    <script src="/js/common.js"></script>
 </body>
 </html>
