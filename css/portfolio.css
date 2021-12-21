@@ -34,6 +34,7 @@ body {
     position: sticky;
     top: 0;
     background-color: white;
+    padding: 20px;
 }
 .navigation__elements {
     margin: 0 15px;
@@ -94,9 +95,15 @@ body {
     font-weight: bolder;
     border-radius: 5px;
 }
+.navigation__item {
+    min-width: auto;
+    display: inline-block;
+    text-align: center;
+}
 .header {
     align-self: center;
-    margin: 0 20px;
+    margin: 20px 20px;
+    margin-bottom: 50px;
 }
 .header__title {
     /* display: inline-block; */
@@ -179,7 +186,7 @@ body {
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .navigation {
         /* COMMON */
         display: flex;

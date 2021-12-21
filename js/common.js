@@ -24,7 +24,7 @@ function show_nav() {
       } else {
         // nav.classList.remove("navigation__list")
         nav.classList.add("display__nav");
-        active()
+        // active()
         first = true
       }
 }

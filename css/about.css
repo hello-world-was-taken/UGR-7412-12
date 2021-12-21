@@ -35,6 +35,7 @@ body {
     position: sticky;
     top: 0;
     background-color: white;
+    padding: 20px;
 }
 .navigation__elements {
     /* COMMON */
@@ -59,6 +60,43 @@ body {
     /* COMMON */
     width: 40px;
     height: 40px;
+}
+.display__nav {
+    /* border: 2px solid red; */
+    display: block;
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    right: 0;
+    min-width: 50vw;
+    height: 500px;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px rgb(130, 130, 130);
+}
+.navigation__item {
+    min-width: 100%;
+    display: block;
+    text-align: center;
+}
+.navigation__link {
+    display: inline-block;
+    /* border: 2px solid red; */
+    min-width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+.navigation__link:hover {
+    background-color: var(--blue);
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
 }
 .header {
     align-self: center;
@@ -133,7 +171,7 @@ body {
 
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .navigation {
         /* COMMON */
         display: flex;
@@ -166,6 +204,11 @@ body {
         font-weight: bolder;
         border-radius: 5px;
     }
+    .navigation__item {
+        min-width: auto;
+        display: inline-block;
+        text-align: center;
+    }
     .a_active {
         /* COMMON */
         background-color: var(--blue);
@@ -186,43 +229,6 @@ body {
     .navigation__hamburger {
         /* COMMON */
         display: none;
-    }
-    .display__nav {
-        /* border: 2px solid red; */
-        display: block;
-        display: flex !important;
-        flex-direction: column;
-        position: absolute;
-        z-index: 10;
-        top: 100px;
-        right: 0;
-        min-width: 50vw;
-        height: 500px;
-        background-color: white;
-        color: black;
-        font-weight: bolder;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 2px 2px 8px rgb(130, 130, 130);
-    }
-    .navigation__item {
-        min-width: 100%;
-        display: block;
-        text-align: center;
-    }
-    .navigation__link {
-        display: inline-block;
-        /* border: 2px solid red; */
-        min-width: 100%;
-        padding: 20px;
-        text-decoration: none;
-        color: black;
-    }
-    .navigation__link:hover {
-        background-color: var(--blue);
-        color: white;
-        font-weight: bolder;
-        border-radius: 5px;
     }
     
     .about-main {
