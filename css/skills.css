@@ -177,6 +177,7 @@ body {
     width: 40%;
     font-weight: bolder;
     letter-spacing: 2px;
+    margin-top: 0;
     margin-bottom: 20px;
     list-style-type: none;
     background-color: var(--blue);
@@ -185,6 +186,8 @@ body {
     border-radius: 5px;
     font-weight: bolder;
     font-size: larger;
+    display: inline-block;
+        margin-top: 70px;
 }
 .skills-main__button--collapsed {
     width: 80%;
@@ -301,6 +304,9 @@ body {
         display: none;
     }
     .skills-main__item--first {
+        /* visibility: visible; */
+        display: inline-block;
+        margin-top: 20px;
         width: 40%;
         font-weight: bolder;
         letter-spacing: 2px;
@@ -308,6 +314,7 @@ body {
     }
     .skills-main__list{
         /* border: 2px solid red; */
+        /* visibility: hidden; */
         width: 40%;
         font-weight: bolder;
         letter-spacing: 2px;

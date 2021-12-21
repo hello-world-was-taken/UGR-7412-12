@@ -47,6 +47,7 @@ body {
 .navigation__list {
     /* COMMON */
     display: none;
+    transition: display 2s ease-in;
 }
 .navigation__hamburger {
     /* COMMON */

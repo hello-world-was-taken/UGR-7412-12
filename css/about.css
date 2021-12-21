@@ -137,6 +137,7 @@ body {
 }
 .about-main__description {
     margin-top: 20px;
+    padding: 30px;
     text-align: justify;
     color: var(--font-color)
 }
