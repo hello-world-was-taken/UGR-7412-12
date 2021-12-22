@@ -114,6 +114,9 @@ body {
     word-spacing: 10px;
     line-height: 5rem;
 }
+.main__heading {
+    font-size: 4rem;
+}
 
 .main__flex, .home-main__personal-photo-social {
     /* COMMON */
@@ -129,11 +132,15 @@ body {
     min-width: 100vw;
 }
 .home-main__name {
+    display: inline-block;
     background-color: var(--blue);
     padding: 10px;
     color: white;
     border-radius: 5px;
     font-weight: bolder;  
+    font-size: 5rem;
+    margin-top: 10px;
+    /* border: 2px solid red; */
 }
 .home-main__img{
     max-width: 300px;

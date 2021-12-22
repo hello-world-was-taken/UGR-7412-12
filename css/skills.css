@@ -195,6 +195,11 @@ body {
     display: inline-block;
         margin-top: 70px;
 }
+.skills-main__item--hidden {
+    /* display: none; */
+    width: 100%;
+    /* background-color: red; */
+}
 .skills-main__button--collapsed {
     width: 80%;
     padding: 20px 10px; 
@@ -336,8 +341,12 @@ body {
         width: 100%;
     }
     .skills-main__item--hidden {
+        /* display: none; */
         width: 100%;
         /* background-color: red; */
+    }
+    .hidden {
+        display: none;
     }
     .skills-main__item {
         list-style-type: none;
