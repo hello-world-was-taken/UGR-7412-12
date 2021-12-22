@@ -4,7 +4,7 @@ function active() {
     let len = list.length
     for (let i = 0; i < len; i++) {
         if(list[i].href == loca) {
-            list[i].classList.add("a_active")
+            list[i].classList.add("current_page")
         }
     }
 }

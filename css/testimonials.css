@@ -1,105 +1,3 @@
-:root {
-    --blue: #003cff;
-    --white: #ffffff;
-    --grey: rgb(243, 243, 243);
-    --font-color: rgb(51, 51, 51);
-  }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* color: var(--font-color); */
-}
-
-/* START FROM MOBILE VIEW */
-body {
-    /* COMMON */
-    display: grid;
-    grid-template-rows: 100px auto 100px; /* CHANGE FOR THE DESKTOP VERSION */
-    max-width: 100vw;
-    min-height: 100vh;
-    position: relative;
-    background-color: var(--grey);
-    /* background-color: rgb(255, 255, 255); */
-}
-
-.navigation {
-    /* COMMON */
-    display: flex;
-    max-width: 100vw;
-    /* border: 2px solid red; */
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 4px 0 8px rgb(225, 225, 225);
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    padding: 20px;
-}
-.navigation__elements {
-    /* COMMON */
-    margin: 0 15px;
-}
-.navigation__logo {
-    /* COMMON */
-    letter-spacing: 3.5px;
-    font-weight: bolder;
-    font-size: x-large;
-}
-.navigation__list {
-    /* COMMON */
-    display: none;
-}
-.navigation__hamburger {
-    /* COMMON */
-    border: none;
-    background-color: white;
-}
-.navigation__hamburger-img {
-    /* COMMON */
-    width: 40px;
-    height: 40px;
-}
-.display__nav {
-    /* border: 2px solid red; */
-    display: block;
-    display: flex !important;
-    flex-direction: column;
-    position: absolute;
-    z-index: 10;
-    top: 100px;
-    right: 0;
-    min-width: 50vw;
-    height: 500px;
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 2px 8px rgb(130, 130, 130);
-}
-.navigation__item {
-    min-width: 100%;
-    display: block;
-    text-align: center;
-}
-.navigation__link {
-    display: inline-block;
-    /* border: 2px solid red; */
-    min-width: 100%;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-}
-.navigation__link:hover {
-    background-color: var(--blue);
-    color: white;
-    font-weight: bolder;
-    border-radius: 5px;
-}
 .testimonial-main {
     height: 100%;
     max-width: 100vw;
@@ -108,18 +6,12 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 110px;
-    /* padding: 20px; FOR THE FOOTER, i AM LEAVING 10PX */
-    /* border: 2px solid rgb(255, 132, 0); */
-    /* font-size: 3rem;
-    word-spacing: 10px;
-    line-height: 5rem; */
 }
 .header {
     align-self: center;
     margin: 0 20px;
 }
 .header__title {
-    /* display: inline-block; */
     text-align: center;
 }
 
@@ -128,7 +20,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid green; */
     padding: 40px 10px;
     box-shadow: 2px 2px 8px lightgray;
     background-color: white;
@@ -141,39 +32,30 @@ body {
     margin-bottom: 20px;
 }
 .table {
-    /* border: 3px solid rgb(158, 158, 158); */
     border-collapse: collapse;
     border-radius: 5px;
     max-width: 800px;
     border-radius: 5px;
 }
 .td__wrapper {
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
 }
 .table__header {
     width: 30rem;
-    /* border: 2px solid rgb(84, 84, 84); */
     border-collapse: collapse;
     padding: 30px;
 }
 .table__row {
-    /* display: inline-block; */
     padding-top: 10px;
-    /* border: 2px solid rgb(84, 84, 84); */
     border-collapse: collapse;
-    /* margin-bottom: 50px; */
     box-shadow: 1px 0px 4px lightgrey;
     border-radius: 5px;
-    /* border: 2px solid red;
-    padding: 0 20px; */
+
 }
 .table__data {
-    /* display: flex; */
-    /* flex-direction: row; */
+
     padding: 30px;
-    /* border: 2px solid rgb(84, 84, 84); */
     border-collapse: collapse;
     justify-content: center;
     text-align: center;
@@ -185,87 +67,7 @@ body {
 }
 
 
-.footer {
-    /* COMMON */
-    /* border: 2px solid black; */
-    position: absolute;
-    min-width: 100%;
-    height: 100px;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: white;
-}
-.footer__elements {
-    /* COMMON */
-    margin: 0 10px;
-}
-
-
-
-
 @media screen and (min-width: 1000px) {
-    .navigation {
-        /* COMMON */
-        display: flex;
-        max-width: 100vw;
-        /* border: 2px solid red; */
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 4px 0 8px rgb(225, 225, 225);
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        background-color: white;
-    }
-    .navigation__elements {
-        margin: 0;
-    }
-    .navigation__item {
-        display: inline-block;
-    }
-    .navigation__link {
-        margin: 0;
-        padding: 15px 10px;
-        text-decoration: none;
-        color: black;
-        font-weight: bolder;
-    }
-    .navigation__link:hover {
-        background-color: var(--blue);
-        color: white;
-        font-weight: bolder;
-        border-radius: 5px;
-    }
-    .navigation__item {
-        min-width: auto;
-        display: inline-block;
-        text-align: center;
-    }
-    .a_active {
-        /* COMMON */
-        background-color: var(--blue);
-        color: white;
-        font-weight: bolder;
-        border-radius: 5px;
-    }
-    .navigation__logo {
-        margin: 0 15px;
-        letter-spacing: 3.5px;
-        font-weight: bolder;
-        font-size: x-large;
-    }
-    .navigation__list {
-        /* COMMON */
-        display: block;
-    }
-    .navigation__hamburger {
-        /* COMMON */
-        display: none;
-    }
-    
     .testimonial-main {
         height: 100%;
         max-width: 100vw;
@@ -273,8 +75,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 110px; /* FOR THE FOOTER, i AM LEAVING 10PX */
-        /* border: 2px solid rgb(255, 132, 0); */
+        margin-bottom: 110px;
     }
     .header__testimonial-intro {
         margin-top: 20px;
@@ -287,18 +88,15 @@ body {
         /* COMMON */
         display: flex;
         flex-direction: row;
-        /* flex-direction: column; */
         align-items: center;
         justify-content: space-around;
         min-width: 100%;
-        /* border: 2px solid green; */
         padding: 40px 10px;
         box-shadow: 2px 2px 8px lightgray;
         background-color: white;
         min-width: 100%;
     }
     .table {
-        /* border: 3px solid rgb(158, 158, 158); */
         border-collapse: collapse;
         border-radius: 5px;
         min-width: 900px;
