@@ -10,7 +10,7 @@
 <body>
 
     <nav class="navigation">
-        <span class="navigation__logo navigation__elements">HAILEMARIAM</span>
+        <span class="navigation__logo navigation__elements" aria-hidden="true">HAILEMARIAM</span>
 
         <button onclick="show_nav()" class="navigation__hamburger navigation__elements" title="hamburger" type="button"><img class="navigation__hamburger-img" src="../images/hamburger.png" alt=""></button>
 
@@ -20,7 +20,7 @@
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./about.html">About</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./skills.html">Skills</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./portfolio.html">Portfolio</a></li>
-            <li class="navigation__item navigation__elements"><a class="navigation__link" href="./services.html">services</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="./services.html">Services</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./testimonial.html">Testimonial</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./contact.html">Contact</a></li>
         </ul>
@@ -31,21 +31,20 @@
         <div class="header">
             <h1 class="header__title">Skills</h1>
             
-            <p class="header__skills-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eaque hic repudiandae ut, neque minus laudantium a quasi facere molestias.</p>
+            <p class="header__skills-intro">Here are some of my lists. Click on the drop downs for more.</p>
     
         </div>
         
         <div class="main__flex">
-            <ul class="skills-main__visible skills-main__list">
+            <ul class="skills-main__visible skills-main__list" aria-label="Some of my skills">
                 <li class="skills-main__item">JQuery</li>
                 <li class="skills-main__item">Django</li>
-                <li class="skills-main__item">JQuery</li>
                 <li class="skills-main__item">CSS</li>
                 <li class="skills-main__item">ASP.NET</li>
                 <li class="skills-main__item">SASS</li>
             </ul>
             <div class="button__wrapper">
-                <button onclick="show_hide_back_end()" class="show__back-end skills-main__item--first" id="back-end">Back-End</button>
+                <button onclick="show_hide_back_end()" class="show__back-end skills-main__item--first" id="back-end" aria-label="Back-end drop down">Back-End</button>
                 <ul class="skills-main__list skills-main__item--hidden hidden" id="skills__back-end">
                     <li class="skills-main__item skills-main__item--hidden">Python</li>
                     <li class="skills-main__item skills-main__item--hidden">JQuery</li>
@@ -56,7 +55,7 @@
                     <li class="skills-main__item skills-main__item--hidden">Node.js</li>
                 </ul>
 
-                <button onclick="show_hide_front_end()" class="show__front-end skills-main__item--first" id="front-end">Front-End</button>
+                <button onclick="show_hide_front_end()" class="show__front-end skills-main__item--first" id="front-end" aria-label="Back-end drop down">Front-End</button>
                 <ul class="skills-main__list skills-main__item--hidden hidden" id="skills__front-end">
                     <li class="skills-main__item skills-main__item--hidden">HTML</li>
                     <li class="skills-main__item skills-main__item--hidden">CSS</li>
@@ -67,23 +66,7 @@
                     <li class="skills-main__item skills-main__item--hidden">iOS</li>
                 </ul>
             </div>
-    
-            <!-- <div class="skills-main__hidden">
-                <button class="skills-main__button--collapsed">Front-end</button>
-                <ul class="skills-main__hidden-first">
-                    <li class="hidden-first__item">lorem</li>
-                    <li class="hidden-first__item">lorem</li>
-                    <li class="hidden-first__item">lorem</li>
-                    <li class="hidden-first__item">lorem</li>
-                </ul>
-                <button class="skills-main__button--collapsed">Back-end</button>
-                <ul class="skills-main__hidden-second">
-                    <li class="hidden-first__item">lorem</li>
-                    <li class="hidden-first__item">lorem</li>
-                    <li class="hidden-first__item">lorem</li>
-                    <li class="hidden-first__item">lorem</li>
-                </ul>
-            </div> -->
+
         </div>
 
     </main>
@@ -92,7 +75,7 @@
 
         <!-- <span class="footer__left footer__elements"></span> -->
         <span class="footer__center footer__elements">Terms and services</span>
-        <span class="footer__right footer__elements">&copy;2021</span>
+        <span class="footer__right footer__elements" aria-label="copyright">&copy;2021</span>
 
     </footer>
 

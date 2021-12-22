@@ -10,7 +10,7 @@
 <body>
 
     <nav class="navigation">
-        <span class="navigation__logo navigation__elements">HAILEMARIAM</span>
+        <span class="navigation__logo navigation__elements" aria-hidden="true">HAILEMARIAM</span>
 
         <button onclick="show_nav()" class="navigation__hamburger navigation__elements" title="hamburger" type="button"><img class="navigation__hamburger-img" src="../images/hamburger.png" alt="hamburger icon"></button>
 
@@ -20,7 +20,7 @@
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./about.html">About</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./skills.html">Skills</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./portfolio.html">Portfolio</a></li>
-            <li class="navigation__item navigation__elements"><a class="navigation__link" href="./services.html">services</a></li>
+            <li class="navigation__item navigation__elements"><a class="navigation__link" href="./services.html">Services</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./testimonial.html">Testimonial</a></li>
             <li class="navigation__item navigation__elements"><a class="navigation__link" href="./contact.html">Contact</a></li>
         </ul>
@@ -36,36 +36,35 @@
             <div class="contact__social">
                 
                 <div class="social__container">
-                    <a href="" class="social__link"><img class="social__img" src="../images/facebook.png" alt="facebook icon"></a>
-                    <span class="social__name">Facebook</span>
+                    <a title="My Facebook Contact Information" href="" class="social__link"><img class="social__img" src="../images/facebook.png" alt="facebook icon" aria-hidden="true"></a>
+                    <span class="social__name"  aria-hidden="true">Facebook</span>
                 </div>
 
                 <div class="social__container">
-                    <a href="" class="social__link"><img class="social__img" src="../images/twitter.png" alt="twitter icon"></a>
-                    <span class="social__name">Twitter</span>
+                    <a title="My Twitter Contact Information" href="" class="social__link"><img class="social__img" src="../images/twitter.png" alt="twitter icon" aria-hidden="true"></a>
+                    <span class="social__name"  aria-hidden="true">Twitter</span>
                 </div>
                
                 <div class="social__container">
-                    <a href="" class="social__link"><img class="social__img" src="../images/linkedin.png" alt="linedin icon"></a>
-                    <span class="social__name">Linkedin</span>
+                    <a title="My Linkedin Contact Information" href="" class="social__link"><img class="social__img" src="../images/linkedin.png" alt="linedin icon" aria-hidden="true"></a>
+                    <span class="social__name"  aria-hidden="true">Linkedin</span>
                 </div>
                
                 <div class="social__container">
-                    <a href="" class="social__link"><img class="social__img" src="../images/github.png" alt="github icon"></a>
-                    <span class="social__name">GitHub</span>
+                    <a title="My GitHub Profile" href="" class="social__link"><img class="social__img" src="../images/github.png" alt="github icon" aria-hidden="true"></a>
+                    <span class="social__name"  aria-hidden="true">GitHub</span>
                 </div>
             
             </div>
 
-            <form class="form">
-                <!--MAY BE ADD A FEILDSET AND SEE THE DIFFERENCE-->
+            <form class="form" aria-label="Send your inquery/message">
                 <label class="form__element" for="full-name">Full name</label>
                 <input class="form__input form__element" id = "full-name"type="text" name="full-name" placeholder="Full Name"/>
                 <label class="form__element" for="email">Email</label>
                 <input  class="form__input form__element"id="email"type="email" name="email" placeholder="email@example.com" />
                 <label class="form__element" for="content">Content</label>
                 <textarea class="form__input form__element" name="text-area" id="content"></textarea>
-                <button class="form__submit"type="submit">Send</button>
+                <button class="form__submit"type="submit" aria-label="submit your inquery">Send</button>
               </form>
         </div>
 
@@ -73,9 +72,8 @@
 
       <footer class="footer">
 
-        <!-- <span class="footer__left footer__elements"></span> -->
         <span class="footer__center footer__elements">Terms and services</span>
-        <span class="footer__right footer__elements">&copy;2021</span>
+        <span class="footer__right footer__elements" aria-label="copyright">&copy;2021</span>
 
     </footer>
 
