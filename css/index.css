@@ -113,10 +113,12 @@ body {
     font-size: 3rem;
     word-spacing: 10px;
     line-height: 5rem;
+    word-spacing: normal;
 }
 .main__heading {
     max-width: 100vw;
     font-size: 4rem;
+    word-spacing: normal;
 }
 
 .main__flex, .home-main__personal-photo-social {
@@ -139,8 +141,10 @@ body {
     color: white;
     border-radius: 5px;
     font-weight: bolder;  
-    font-size: 5rem;
+    font-size: 4rem;
     margin-top: 10px;
+    max-width: 100vw;
+    word-spacing: normal;
     /* border: 2px solid red; */
 }
 .home-main__img{
@@ -273,10 +277,46 @@ body {
         padding: 10px;
         color: white;
         border-radius: 5px;
-        font-weight: bolder;  
+        font-weight: bolder;
     }
     .home-main__social-link {
         display: inline-block;
         padding: 10px;
+    }
+}
+
+
+@media screen  and (max-width: 480px){
+    .main__heading {
+        font-size: 2.5rem;
+    }
+    .home-main__name {
+        font-size: 3rem;
+    }
+}
+
+@media screen  and (max-width: 350px){
+    .main__heading {
+        font-size: 2rem;
+    }
+    .home-main__name {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen  and (max-width: 280px){
+    .main__heading {
+        font-size: 1.5rem;
+    }
+    .home-main__name {
+        font-size: 2rem;
+    }
+    .navigation__logo {
+        letter-spacing: 2px;
+        font-weight: bolder;
+        font-size: large;
+    }
+    .footer {
+        max-width: 100%;
     }
 }
