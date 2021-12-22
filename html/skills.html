@@ -36,35 +36,37 @@
         </header>
         
         <div class="main__flex">
-            <!-- <ul class="skills-main__visible">
+            <ul class="skills-main__visible skills-main__list">
                 <li class="skills-main__item">JQuery</li>
                 <li class="skills-main__item">Django</li>
                 <li class="skills-main__item">JQuery</li>
                 <li class="skills-main__item">CSS</li>
                 <li class="skills-main__item">ASP.NET</li>
                 <li class="skills-main__item">SASS</li>
-            </ul> -->
-            <ul class="skills-main__list">
-                <li class="skills-main__item--first">Back-End</li>
-                <li class="skills-main__item">Python</li>
-                <li class="skills-main__item">JQuery</li>
-                <li class="skills-main__item">Django</li>
-                <li class="skills-main__item">Sprint Boot</li>
-                <li class="skills-main__item">Java</li>
-                <li class="skills-main__item">ASP.NET</li>
-                <li class="skills-main__item">Node.js</li>
             </ul>
+            <div class="button__wrapper">
+                <button onclick="show_hide_back_end()" class="show__back-end skills-main__item--first" id="back-end">Back-End</button>
+                <ul class="skills-main__list skills-main__item--hidden" id="skills__back-end">
+                    <li class="skills-main__item skills-main__item--hidden">Python</li>
+                    <li class="skills-main__item skills-main__item--hidden">JQuery</li>
+                    <li class="skills-main__item skills-main__item--hidden">Django</li>
+                    <li class="skills-main__item skills-main__item--hidden">Sprint Boot</li>
+                    <li class="skills-main__item skills-main__item--hidden">Java</li>
+                    <li class="skills-main__item skills-main__item--hidden">ASP.NET</li>
+                    <li class="skills-main__item skills-main__item--hidden">Node.js</li>
+                </ul>
 
-            <ul class="skills-main__list">
-                <li class="skills-main__item--first">Front-End</li>
-                <li class="skills-main__item">HTML</li>
-                <li class="skills-main__item">CSS</li>
-                <li class="skills-main__item">SASS</li>
-                <li class="skills-main__item">Angular</li>
-                <li class="skills-main__item">React</li>
-                <li class="skills-main__item">Android Native</li>
-                <li class="skills-main__item">iOS</li>
-            </ul>
+                <button onclick="show_hide_front_end()" class="show__front-end skills-main__item--first" id="front-end">Front-End</button>
+                <ul class="skills-main__list skills-main__item--hidden" id="skills__front-end">
+                    <li class="skills-main__item skills-main__item--hidden">HTML</li>
+                    <li class="skills-main__item skills-main__item--hidden">CSS</li>
+                    <li class="skills-main__item skills-main__item--hidden">SASS</li>
+                    <li class="skills-main__item skills-main__item--hidden">Angular</li>
+                    <li class="skills-main__item skills-main__item--hidden">React</li>
+                    <li class="skills-main__item skills-main__item--hidden">Android Native</li>
+                    <li class="skills-main__item skills-main__item--hidden">iOS</li>
+                </ul>
+            </div>
     
             <!-- <div class="skills-main__hidden">
                 <button class="skills-main__button--collapsed">Front-end</button>
