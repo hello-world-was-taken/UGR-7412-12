@@ -115,7 +115,7 @@ body {
     line-height: 5rem;
 }
 .main__heading {
-    /* max-width: 100vw; */
+    max-width: 100vw;
     font-size: 4rem;
 }
 
