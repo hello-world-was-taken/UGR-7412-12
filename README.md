@@ -1,3 +1,3 @@
-Personal Portfolio and Profile Page.
-Name: Hailemariam Arega
-ID: UGR/7412/12
+# Personal Portfolio and Profile Page.
+# Name: Hailemariam Arega
+# ID: UGR/7412/12
