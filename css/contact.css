@@ -137,7 +137,7 @@ body {
 }
 .contact__social {
     /* border: 2px solid green; */
-    padding: 40px 60px;
+    padding: 20px;
     box-shadow: 2px 2px 8px lightgray;
     background-color: white;
     border-radius: 5px;
@@ -145,6 +145,7 @@ body {
     width: 50%;
 }
 .social__container {
+    min-width: 90%;
     display: flex;
     align-items: center;
     /* border: 2px solid red; */
